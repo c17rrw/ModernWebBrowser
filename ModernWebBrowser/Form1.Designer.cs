@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.webDisplay = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // webDisplay
+            // 
+            this.webDisplay.BackColor = System.Drawing.SystemColors.Window;
+            this.webDisplay.Location = new System.Drawing.Point(235, 118);
+            this.webDisplay.Name = "webDisplay";
+            this.webDisplay.Size = new System.Drawing.Size(988, 587);
+            this.webDisplay.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1463, 810);
+            this.Controls.Add(this.webDisplay);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label webDisplay;
     }
 }
 
